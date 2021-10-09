@@ -19,7 +19,13 @@
 
 
 @media (max-width: 900px) {
+    .logo {
+        width: 104px;
+    }
 
+    header {
+        height: 112px;
+    }
     .download {
         flex-direction: column;
     }
@@ -50,7 +56,8 @@
     }
 
     .container-ttl {
-        margin-top: 60px;
+        margin-top: 34px;
+        padding-top: 40px;
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 14px;
