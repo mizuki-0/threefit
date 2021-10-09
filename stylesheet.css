@@ -1,208 +1,326 @@
-/* -------------------- CSSは一番下から書き始めてください！ -------------------- */
-
-* {
-  box-sizing: border-box;
-}
+a {
+    text-decoration: none;
+  }
 
 body {
   margin: 0;
   font-family: "Hiragino Kaku Gothic ProN";
-}
+}  
 
-a {
-  text-decoration: none;
+* {
+    box-sizing: border-box;
 }
 
 .container {
-  max-width: 1170px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
+    width: 100%;
+    padding: 2px 15px;
+    margin: auto;
 }
-
 .top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(https://prog-8.com/images/html/advanced/top.png);
-  background-size: cover;
-  color: white;
-  text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 50px;
 }
 
-.top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 5px;
+.top-wrapper hi {
+    font-size: 64px;
 }
 
-.top-wrapper p {
-  opacity: 0.7;
+.top-inner {
+    max-width: 1400px;
+    height: auto;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 10;
 }
 
-.btn-wrapper {
-  text-align: center;
-  margin: 20px 0;
+.container-head01 {
+    width: 54%;
+    padding: 0 20px;
+    z-index: 10;
 }
 
-.btn-wrapper p {
-  margin: 10px 0;
+.container-ttl {
+    position: relative;
+    max-width: 660px;
+    padding: 62px 40px 47px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.8);
+    border-radius: 41px;
+    max-height: 600px;
 }
 
-.signup {
-  background-color: #239b76;
+.container-ttl h1 {
+    font-size: 46px;
+    margin: auto;
 }
 
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
+.container-ttl p {
+    margin-top: 20px;
+    padding: 10xp;
 }
 
-.twitter {
-  background-color: #55acee;
+.container-head02 img {
+    max-width: 100%;
+    height: auto;
+    width /***/: 467px;
+    vertical-align: bottom;
 }
 
-.btn {
-  padding: 8px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
+/* .top-btn {
+} */
+
+.top-btn img {
+    height: 93px;
+    padding: 12px 45px 13px 0px;
+
 }
 
-.btn:hover {
-  opacity: 1;
-}
-
-.fa {
-  margin-right: 5px;
+.douroadbtn {
+    margin: auto 0;
 }
 
 header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-  position :fixed;
-  top: 0;
-  z-index: 10;
+    height: 150px;
+    width: 255px;
+    padding: 19px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 0 155px 155px 0;
+    position: fixed;
+    z-index: 30;
+    top: 0;
 }
 
 .logo {
-  width: 124px;
-  margin-top: 20px;
+    width: 148px;
 }
 
-.header-left {
-  float: left;
+.discription-wrapper {
+    padding: 30px;
+
 }
 
-.header-right {
-  float: right;
-  margin-right: -25px;
+.discription-container h3 {
+    font-size: 36px;
+    padding: 20px;
+    margin: 30px auto;
 }
 
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
+.discription-container {
+    text-align: center;
+    padding: 52px 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
 }
 
-.header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+.discription-container p {
+    font-size: 23px;
+    padding: 12px 0;
 }
 
-.lesson-wrapper {
-  height: 630px;
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
+.function-wrapper {
+    height: auto;
+    background-image: url(fanction_backgroud.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 77px;
 }
 
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #5f5d60;
+.maincontainer {
+    position: relative;
+    display: flex;
+    max-width: 1400px;
+    background-image: url(whiterectangle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 2px;
+    /* box-sizing: border-box; */
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.heading h2 {
-  font-weight: normal;
+.sectionmain {
+    padding: 25px;
+    /* background-image: url(info.png);
+    background-repeat: no-repeat;
+    background-position-y: 25%;
+    background-size: 100px 86px; */
+    margin: auto 33px;
+    max-width: 49%;
 }
 
-.lesson {
-  float: left;
-  width: 25%;
+.othertxt {
+    font-size: 24px;
+    padding-bottom: 12px;
 }
 
-.lesson-icon {
-  position: relative;
+.sectionmain img {
+    width: 100px;
+    height: auto;
 }
 
-.lesson-icon p {
-  position: absolute;
-  top: 44%;
-  width: 100%;
-  color: white;
+.sectionmain h3 {
+    font-size: 36px;
+    padding-top: 36px;
 }
 
-.text-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 13px;
-  color: #b3aeb5;
+.sectionmain p {
+    font-size: 24px;
 }
 
-.heading h3 {
-  font-weight: normal;
+.picturecontainer01 {
+    flex-grow: 1;
+    padding-right: 10px;
+    /* box-sizing: border-box; */
+}
+
+.function {
+    flex: auto;
+    width: 50%;
+    padding: 0 5px;
+    /* box-sizing: border-box; */
+    margin: 0 auto;
+    background-image: url(whitesquer.png);
+    background-position: left;
+    background-repeat: no-repeat;
+
+}
+
+.functionmain {
+    padding: 25px;
+    margin: auto 33px;
+}
+
+.functionmain img {
+    width: 100px;
+    height: auto;
+}
+
+.functionmain h3 {
+    font-size: 36px;
+    padding-top: 36px;
+}
+
+.functionmain p {
+    font-size: 24px;
+}
+
+
+.other {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
+    height: 635px;
+    background-image: url(message_backgroud.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0 7px #1a7940;
+.download-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
+.download-wrapper img {
+    padding: 20px;
+    margin: 0 auto;
 }
 
-footer img {
-  width: 125px;
-}
-
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
+.download {
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
 }
 
 footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
+    border-top: 1px solid rgba(163, 1, 111, 1);
+    height: 500px;
+    margin-top: 73px;
+    padding: 62px 50px;
 }
 
-/* -------------------- CSSはここから追加していきましょう！ -------------------- */
-
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
+.footer-link {
+    height: 300px;
 }
 
-.clear {
-  clear: left;
+.footer-left a {
+    padding: 0 25px;
+    display: block;
+    float: left;
+}
+
+.footer-right {
+    float: right;
+    margin-right: 25px;
+}
+
+.footer-right a {
+    display: block;
+}
+
+.link-txt {
+    margin: auto;
+    font-size: 24px;
+    padding: 6px;
+}
+
+.sns {
+    height: 65px;
+    opacity: 0.9;
+}
+
+.twitter {
+    color: #55acee;
+}
+
+.facabook {
+    color: #3b5998;
+}
+
+.leftlogo {
+    float: left;
+    padding: 10px;
+}
+
+.rightlogo {
+    float: right;
+    padding: 10px;
+}
+
+.leftlogo img {
+    height: 46px;
+}
+
+.rightlogo img {
+    height: 48px;
+}
+
+.footer-right img {
+    padding: 30px;
+}
+
+.footer-logo p {
+    text-align: center;
+    font-size: 24px;
+    padding: 30px;
+    bottom: 0;
 }
