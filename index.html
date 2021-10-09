@@ -1,160 +1,326 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="responsive.css">
-    <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <img class="logo" src="3fitlogo-v02-1_アートボード 1.png">
-        </div>
-    </header>
+a {
+    text-decoration: none;
+  }
 
-    <div class="top-wrapper">
-        <div class="top-inner">
-            <div class="container-head01">
-                <div class="container-ttl">
-                    <h1>あなたの健康づくりの</h1>
-                    <h1>いつもそばに。</h1>
-                    <p>アプリダウンロードはこちらから</p>
-                    <div class="top-btn">
-                        <a href="https://apps.apple.com/jp/app/3fit/id1529217990"><img src="Asset+6SM_OurApp.png"></a>
-                        <a href="https://play.google.com/store/apps/details?id=jp.threefit.aeon.app&hl=ja&gl=US"><img src="Asset+7SM_OurApp.png"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="container-head02">
-                <img src="グループ 11.png">
-            </div>
-        </div>
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}  
 
-    </div>
+* {
+    box-sizing: border-box;
+}
 
-    <div class="discription-wrapper">
-        <div class="discription-container">
-            <h3>イオンスポーツクラブをもっと快適にご利用頂くために</h3>
-            <p>イオンスポーツクラブでは、公式アプリ『3FITアプリ』をリリースいたします。</p>
-            <p>本アプリでは、お気に入り店舗からのお知らせや、毎日の歩数の自動管理、体重や血圧などの記録を入力いただく機能をはじめ、ホームページと連携することにより、クラブからの情報を一度に確認していただくことが可能となります。</p>
-        </div>
-    </div>
+.container {
+    width: 100%;
+    padding: 2px 15px;
+    margin: auto;
+}
+.top-wrapper {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 50px;
+}
 
-    <div class="function-wrapper">
-        <div class="discription-container">
-            <h3>アプリでできること</h3>
-        </div>
+.top-wrapper hi {
+    font-size: 64px;
+}
+
+.top-inner {
+    max-width: 1400px;
+    height: auto;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 10;
+}
+
+.container-head01 {
+    width: 54%;
+    padding: 0 20px;
+    z-index: 10;
+}
+
+.container-ttl {
+    position: relative;
+    max-width: 660px;
+    padding: 62px 40px 47px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.8);
+    border-radius: 41px;
+    max-height: 600px;
+}
+
+.container-ttl h1 {
+    font-size: 46px;
+    margin: auto;
+}
+
+.container-ttl p {
+    margin-top: 20px;
+    padding: 10xp;
+}
+
+.container-head02 img {
+    max-width: 100%;
+    height: auto;
+    width /***/: 467px;
+    vertical-align: bottom;
+}
+
+/* .top-btn {
+} */
+
+.top-btn img {
+    height: 93px;
+    padding: 12px 45px 13px 0px;
+
+}
+
+.douroadbtn {
+    margin: auto 0;
+}
+
+header {
+    height: 150px;
+    width: 255px;
+    padding: 19px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 0 155px 155px 0;
+    position: fixed;
+    z-index: 30;
+    top: 0;
+}
+
+.logo {
+    width: 148px;
+}
+
+.discription-wrapper {
+    padding: 30px;
+
+}
+
+.discription-container h3 {
+    font-size: 36px;
+    padding: 20px;
+    margin: 30px auto;
+}
+
+.discription-container {
+    text-align: center;
+    padding: 52px 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.discription-container p {
+    font-size: 23px;
+    padding: 12px 0;
+}
+
+.function-wrapper {
+    height: auto;
+    background-image: url(fanction_backgroud.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 77px;
+}
+
+.maincontainer {
+    position: relative;
+    display: flex;
+    max-width: 1400px;
+    background-image: url(whiterectangle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 2px;
+    /* box-sizing: border-box; */
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.sectionmain {
+    padding: 25px;
+    /* background-image: url(info.png);
+    background-repeat: no-repeat;
+    background-position-y: 25%;
+    background-size: 100px 86px; */
+    margin: auto 33px;
+    max-width: 45%;
+}
+
+.othertxt {
+    font-size: 24px;
+    padding-bottom: 12px;
+}
+
+.sectionmain img {
+    width: 100px;
+    height: auto;
+}
+
+.sectionmain h3 {
+    font-size: 36px;
+    padding-top: 36px;
+}
+
+.sectionmain p {
+    font-size: 24px;
+}
+
+.picturecontainer01 {
+    flex-grow: 1;
+    padding-right: 10px;
+    /* box-sizing: border-box; */
+}
+
+.function {
+    flex: auto;
+    width: 50%;
+    padding: 0 5px;
+    /* box-sizing: border-box; */
+    margin: 0 auto;
+    background-image: url(whitesquer.png);
+    background-position: left;
+    background-repeat: no-repeat;
+
+}
+
+.functionmain {
+    padding: 25px;
+    margin: auto 33px;
+}
+
+.functionmain img {
+    width: 100px;
+    height: auto;
+}
+
+.functionmain h3 {
+    font-size: 36px;
+    padding-top: 36px;
+}
+
+.functionmain p {
+    font-size: 24px;
+}
 
 
+.other {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+}
 
-        <div class="healthlog">
-            <div class="maincontainer">
-                <div class="picturecontainer01">
-                    <img src="capture_log.png">
-                </div>
-                <div class="sectionmain">
-                    <img src="info.png">
-                    <h3>健康の記録</h3>
-                    <p>日毎、月毎の歩数をチェックでき、”ランキング”では、全国のユーザーや同じ店舗のユーザーと競い合うこともできます。</p>
-                </div>
+.message-wrapper {
+    height: 635px;
+    background-image: url(message_backgroud.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
-            </div>
-        </div>
-        <div class="coupon">
-            <div class="maincontainer couponre">
-                <div class="sectionmain">
-                    <img src="coupon.png">
-                    <h3>クーポン</h3>
-                    <p>お得な特典が配信される「クーポン」機能です。</p>
-                </div>
-                <div class="picturecontainer">
-                    <img src="capture_coupon.png">
-                </div>
-            </div>
-        </div>
-        <div class="stamp">
-            <div class="maincontainer">
-                <div class="picturecontainer01">
-                    <img src="capture_stamp.png">
-                </div>
-                <div class="sectionmain">
-                    <img src="store.png">
-                    <h3>スタンプカード (初期登録時)</h3>
-                    <p>来館スタンプを貯めるとバッジをもらうことができます。</p>
-                </div>
+.download-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-            </div>
-        </div>
-        <div class="other">
-            <div class="function">
-                <div class="functionmain">
-                    <img src="notice.png">
-                    <h3>メッセージ</h3>
-                    <p class="othertxt">お気に入りの店舗を登録、お知らせやイベント、セール等の情報を受け取れます。</p>
-                </div>
-            </div>
-            <div class="function">
-                <div class="functionmain">
-                    <img src="schedule.png">
-                    <h3>プログラム</h3>
-                    <p class="othertxt">登録した店舗のプログラムスケジュールを随時確認できます</p>
-                </div>
-            </div>
-            <div class="function">
-                <div class="functionmain">
-                    <img src="movie.png">
-                    <h3>コンテンツ</h3>
-                    <p class="othertxt">公式の動画コンテンツを視聴できます。</p>
-                </div>
-            </div>
+.download-wrapper img {
+    padding: 20px;
+    margin: 0 auto;
+}
 
-        </div>
-    </div>
+.download {
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
 
-    <div class="message-wrapper">
-        <div class="discription-container">
-            <h3>ダウンロードはこちらから</h3>
-        </div>
-        <div class="download-wrapper">
-            <div class="download">
-                <a class="top-btn" href="https://apps.apple.com/jp/app/3fit/id1529217990"><img src="Asset+6SM_OurApp.png"></a>
-                <img a class="dlqr" src="qr_ios.png">
-                <a class="top-btn"href="https://play.google.com/store/apps/details?id=jp.threefit.aeon.app&hl=ja&gl=US"><img src="Asset+7SM_OurApp.png"></a>
-                <img a class="dlqr" src="qr_and.png">
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="footer-link">
-            <div class="footer-left">
-                <a href="https://twitter.com/AEON_CINEMA" class="sns twitter"><span class="fab fa-twitter fa-3x"></span></a>
-                <a href="https://www.facebook.com/%E3%82%A4%E3%82%AA%E3%83%B3%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E3%82%AF%E3%83%A9%E3%83%96-627947710636349/" class="sns facabook"><span class="fab fa-facebook fa-3x"></span></a>
-            </div>
-            <div class="footer-right">
-                <a href="https://www.aeonretail.jp/" class="link-txt"><span class="fas fa-chevron-right"></span>イオンリテール株式会社</a>
-                <a href="https://www.aeon.info/" class="link-txt"><span class="fas fa-chevron-right"></span>イオングループサイト</a>
-                <a href="https://www.aeonsportsclub.jp/contact/" class="link-txt"><span class="fas fa-chevron-right"></span>お問い合わせ</a>
-                <a href="https://www.aeonsportsclub.jp/qa/" class="link-txt"><span class="fas fa-chevron-right"></span>よくあるご質問</a>
-            </div>
+footer {
+    border-top: 1px solid rgba(163, 1, 111, 1);
+    height: 500px;
+    margin-top: 73px;
+    padding: 62px 50px;
+}
 
-        </div>
+.footer-link {
+    height: 300px;
+}
 
-        <div class="footer-logo">
-            <div class="leftlogo">
-                <img src="logo_aeon.png">
-            </div>
-            <div class="rightlogo">
-                <img src="logo_tree.png">
-            </div>
-            <p>©AEON RETAIL Co.,ltd. All Rights Reserved.</p>
-        </div>
+.footer-left a {
+    padding: 0 25px;
+    display: block;
+    float: left;
+}
 
+.footer-right {
+    float: right;
+    margin-right: 25px;
+}
 
-    </footer>
+.footer-right a {
+    display: block;
+}
 
-</body>
+.link-txt {
+    margin: auto;
+    font-size: 24px;
+    padding: 6px;
+}
 
-</html>
+.sns {
+    height: 65px;
+    opacity: 0.9;
+}
 
+.twitter {
+    color: #55acee;
+}
+
+.facabook {
+    color: #3b5998;
+}
+
+.leftlogo {
+    float: left;
+    padding: 10px;
+}
+
+.rightlogo {
+    float: right;
+    padding: 10px;
+}
+
+.leftlogo img {
+    height: 46px;
+}
+
+.rightlogo img {
+    height: 48px;
+}
+
+.footer-right img {
+    padding: 30px;
+}
+
+.footer-logo p {
+    text-align: center;
+    font-size: 24px;
+    padding: 30px;
+    bottom: 0;
+}
