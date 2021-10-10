@@ -121,8 +121,12 @@
         font-size: 18px;
     }
 
-    .footer-logo p {
-        font-size: 18px;
+    .footertxt {
+        display: none;
+    }
+
+    .footertxt p {
+        font-size: 10px;
     }
 
     .picturecontainer01 {
@@ -177,8 +181,6 @@
         width: 56px;
     }
 
-
-
     .download-wrapper {
         display: flex;
         flex-direction: column;
@@ -195,5 +197,34 @@
 
     .footer-right {
         padding: 20px 0;
+        float: right;
     }
+
+    .logo-left {
+        width: 15%;
+        float: left;
+    }
+
+    .logo-right {
+        width: 25%;
+        float: right;
+    }
+
+    .footer-logo {
+        max-width: 87%;
+        
+    }
+
+    .pc {
+        display: none;
+    }
+    
+    .sp {
+        display: block;
+    }
+
+    .footertxt {
+        float: none;
+    }
+
   }
